@@ -48,90 +48,76 @@ namespace Examen_de_Programacion
 
         private void btnSumaTotal_Click(object sender, EventArgs e)
         {
-            int suma1 = 0;
-            int a = Tablas.Rows.Add ();
+            double total = 0;
+            int a = Tablas.Rows.Add();
             Tablas.Rows[a].Cells[0].Value = textCuentas.Text;
-
             foreach (DataGridViewRow row in Tablas.Rows)
             {
-                suma1 += Convert.ToInt32((row.Cells["Column1"].Value));
-                Tablas.Rows[a].Cells[2].Value = suma1;
+                total += Convert.ToDouble(row.Cells["Column2"].Value);
+                Tablas.Rows[a].Cells[3].Value = total;
             }
-            textSuma1.Text = Convert.ToString(suma1);
-            
+            textSuma1.Text = Convert.ToString(total);
         }
 
         private void btnSuma2_Click(object sender, EventArgs e)
         {
-            int suma2 = 0;
+            double suma = 0;
             int b = Tablas.Rows.Add();
             Tablas.Rows[b].Cells[0].Value = textCuentas.Text;
-
             foreach (DataGridViewRow row in Tablas.Rows)
             {
-                suma2 += Convert.ToInt32((row.Cells["Column2"].Value));
-                Tablas.Rows[b].Cells[3].Value = suma2;
+                suma += Convert.ToDouble(row.Cells["Column3"].Value);
+                Tablas.Rows[b].Cells[3].Value = suma;
             }
-            textSuma1.Text = Convert.ToString(suma2);
+            textSuma2.Text = Convert.ToString(suma);
 
 
         }
 
         private void btnsuma3_Click(object sender, EventArgs e)
         {
-            int suma3 = 0;
+            double suma3 = 0;
             int c = Tablas.Rows.Add();
             Tablas.Rows[c].Cells[0].Value = textCuentas.Text;
-
             foreach (DataGridViewRow row in Tablas.Rows)
             {
-                suma3 += Convert.ToInt32((row.Cells["Column3"].Value));
+                suma3 += Convert.ToDouble(row.Cells["Column4"].Value);
                 Tablas.Rows[c].Cells[4].Value = suma3;
             }
-            textSuma1.Text = Convert.ToString(suma3);
-
+            textSuma3.Text = Convert.ToString(suma3);
         }
-
+        
         private void btnResta1_Click(object sender, EventArgs e)
         {
-            int resta1 = 0;
-            int d = Tablas.Rows.Add();
-            Tablas.Rows[d].Cells[0].Value = textCuentas.Text;
-
+            double resta = 0;
+            int a = Tablas.Rows.Add();
+            Tablas.Rows[a].Cells[0].Value = textCuentas.Text;
             foreach (DataGridViewRow row in Tablas.Rows)
             {
-                resta1 -= Convert.ToInt32((row.Cells["Column1"].Value));
-                Tablas.Rows[d].Cells[2].Value = resta1;
+                resta -= Convert.ToDouble(row.Cells["Column2"].Value);
+                Tablas.Rows[a].Cells[3].Value = resta;
             }
-            textSuma1.Text = Convert.ToString(resta1);
+            textResta1.Text = Convert.ToString(resta);
         }
 
         private void btnResta2_Click(object sender, EventArgs e)
         {
-            int resta2 = 0;
-            int i = Tablas.Rows.Add();
-            Tablas.Rows[i].Cells[0].Value = textCuentas.Text;
-
-            foreach (DataGridViewRow row in Tablas.Rows)
-            {
-                resta2 -= Convert.ToInt32((row.Cells["Column2"].Value));
-                Tablas.Rows[i].Cells[3].Value = resta2;
-            }
-            textSuma1.Text = Convert.ToString(resta2);
+       
         }
 
         private void btnResta3_Click(object sender, EventArgs e)
         {
-            int resta3 = 0;
-            int f = Tablas.Rows.Add();
-            Tablas.Rows[f].Cells[0].Value = textCuentas.Text;
 
-            foreach (DataGridViewRow row in Tablas.Rows)
-            {
-                resta3 -= Convert.ToInt32((row.Cells["Column3"].Value));
-                Tablas.Rows[f].Cells[4].Value = resta3;
-            }
-            textSuma1.Text = Convert.ToString(resta3);
+        }
+
+        private void textCuentas_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textSuma1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

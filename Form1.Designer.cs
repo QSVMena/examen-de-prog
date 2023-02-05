@@ -38,12 +38,6 @@
             this.textColumna2 = new System.Windows.Forms.TextBox();
             this.textColumna3 = new System.Windows.Forms.TextBox();
             this.Tablas = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSuma1 = new System.Windows.Forms.Button();
             this.btnResta1 = new System.Windows.Forms.Button();
             this.btnSuma2 = new System.Windows.Forms.Button();
@@ -56,6 +50,11 @@
             this.btnResta3 = new System.Windows.Forms.Button();
             this.textSuma3 = new System.Windows.Forms.TextBox();
             this.textResta3 = new System.Windows.Forms.TextBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Tablas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +73,7 @@
             this.textCuentas.Name = "textCuentas";
             this.textCuentas.Size = new System.Drawing.Size(333, 31);
             this.textCuentas.TabIndex = 1;
-            this.textCuentas.Text = "t";
+            this.textCuentas.TextChanged += new System.EventHandler(this.textCuentas_TextChanged);
             // 
             // btnAsignar
             // 
@@ -145,56 +144,13 @@
             this.Column2,
             this.Column3,
             this.Column4,
-            this.Column5,
-            this.Column6});
-            this.Tablas.Location = new System.Drawing.Point(37, 345);
+            this.Column5});
+            this.Tablas.Location = new System.Drawing.Point(105, 345);
             this.Tablas.Name = "Tablas";
             this.Tablas.RowHeadersWidth = 62;
             this.Tablas.RowTemplate.Height = 33;
-            this.Tablas.Size = new System.Drawing.Size(1164, 321);
+            this.Tablas.Size = new System.Drawing.Size(1010, 321);
             this.Tablas.TabIndex = 9;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Descripcion";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 350;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "1";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "2";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 150;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "3";
-            this.Column4.MinimumWidth = 8;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 150;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Descrip Total";
-            this.Column5.MinimumWidth = 8;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 150;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Descripcion Neto";
-            this.Column6.MinimumWidth = 8;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 150;
             // 
             // btnSuma1
             // 
@@ -242,6 +198,7 @@
             this.textSuma1.Name = "textSuma1";
             this.textSuma1.Size = new System.Drawing.Size(150, 31);
             this.textSuma1.TabIndex = 19;
+            this.textSuma1.TextChanged += new System.EventHandler(this.textSuma1_TextChanged);
             // 
             // textResta1
             // 
@@ -297,6 +254,41 @@
             this.textResta3.Name = "textResta3";
             this.textResta3.Size = new System.Drawing.Size(150, 31);
             this.textResta3.TabIndex = 26;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Descripcion";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 350;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "1";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "2";
+            this.Column3.MinimumWidth = 8;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 150;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "3";
+            this.Column4.MinimumWidth = 8;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 150;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "4";
+            this.Column5.MinimumWidth = 8;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 150;
             // 
             // Tabla
             // 
@@ -358,15 +350,14 @@
         private TextBox textResta1;
         private TextBox textSuma2;
         private TextBox textResta2;
+        private Button btnsuma3;
+        private Button btnResta3;
+        private TextBox textSuma3;
+        private TextBox textResta3;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private Button btnsuma3;
-        private Button btnResta3;
-        private TextBox textSuma3;
-        private TextBox textResta3;
     }
 }

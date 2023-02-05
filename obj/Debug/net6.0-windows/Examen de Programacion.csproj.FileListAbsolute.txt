@@ -1,0 +1,17 @@
+C:\Programacion\Examen de Programacion\bin\Debug\net6.0-windows\Examen de Programacion.exe
+C:\Programacion\Examen de Programacion\bin\Debug\net6.0-windows\Examen de Programacion.deps.json
+C:\Programacion\Examen de Programacion\bin\Debug\net6.0-windows\Examen de Programacion.runtimeconfig.json
+C:\Programacion\Examen de Programacion\bin\Debug\net6.0-windows\Examen de Programacion.dll
+C:\Programacion\Examen de Programacion\bin\Debug\net6.0-windows\Examen de Programacion.pdb
+C:\Programacion\Examen de Programacion\obj\Debug\net6.0-windows\Examen de Programacion.csproj.AssemblyReference.cache
+C:\Programacion\Examen de Programacion\obj\Debug\net6.0-windows\Examen_de_Programacion.Tabla.resources
+C:\Programacion\Examen de Programacion\obj\Debug\net6.0-windows\Examen de Programacion.csproj.GenerateResource.cache
+C:\Programacion\Examen de Programacion\obj\Debug\net6.0-windows\Examen de Programacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programacion\Examen de Programacion\obj\Debug\net6.0-windows\Examen de Programacion.AssemblyInfoInputs.cache
+C:\Programacion\Examen de Programacion\obj\Debug\net6.0-windows\Examen de Programacion.AssemblyInfo.cs
+C:\Programacion\Examen de Programacion\obj\Debug\net6.0-windows\Examen de Programacion.csproj.CoreCompileInputs.cache
+C:\Programacion\Examen de Programacion\obj\Debug\net6.0-windows\Examen de Programacion.dll
+C:\Programacion\Examen de Programacion\obj\Debug\net6.0-windows\refint\Examen de Programacion.dll
+C:\Programacion\Examen de Programacion\obj\Debug\net6.0-windows\Examen de Programacion.pdb
+C:\Programacion\Examen de Programacion\obj\Debug\net6.0-windows\Examen de Programacion.genruntimeconfig.cache
+C:\Programacion\Examen de Programacion\obj\Debug\net6.0-windows\ref\Examen de Programacion.dll
